@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // Kiểu nguyên thuỷ
+    // let a = 10;
+    // let b = a;
+    // a = 21
+    // console.log("b",b);
+    // console.log("a",a);
+
+    // Kiểu phức tap (object) ~ new Student("Ning", 12)
+    // let obj = {
+    //     name: "Vũ Linh",
+    //     age: 20
+    // }
+    // console.log(typeof obj);
+
+    // Kểu tham chiếu (object, array)
+    // let sv1 = {
+    //    name: "Vũ Linh",
+    //    age: 20
+    // }
+    //
+    // let sv2 = sv1;
+    //
+    // console.log(sv1 == sv2);
+
+
+    // let sv2 = sv1;
+    // sv1.name = "Kha";
+    // console.log(sv2.name);
+
+    // truyền tham trị
+    // function change(a) { // let a = number;
+    //     a = 10; // a = 10
+    // }
+    //
+    // let number = 11;
+    // change(number);
+    // console.log(number);
+
+    // Truyền tham chiếu
+    function change(obj) { // let obj = sv;
+        obj.name = "Vũ Linh"; // obj.name = "Vũ Linh";
+    }
+
+    let sv = {
+        name: "Toàn"
+    }
+    change(sv);
+    console.log(sv.name);
+</script>
+</body>
+</html>
