@@ -15,7 +15,7 @@ public class Main {
         d2.bark();
 
         Dog d3 = new Dog("Bach");
-        System.out.println("Color d3: " + d3.color);
+        System.out.println("Color d3: " + d3.color); // No Color
 
         System.out.println(d); // <=> d3.toString() nếu có hàm toString()
     }
