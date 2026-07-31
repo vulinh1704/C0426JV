@@ -1,3 +1,5 @@
+package ly_thuyet;
+
 public class Animal {
     protected String name;
 
