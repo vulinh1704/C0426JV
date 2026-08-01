@@ -1,3 +1,5 @@
+package ly_thuyet;
+
 public abstract class Animal {
     String name;
 
@@ -21,6 +23,7 @@ Abstract class là 1 class được khai báo với từ khóa abstract.
 + Có thể có các phương thức trừu tượng (là các phương thức được khai báo với từ khóa abstract và KHÔNG CÓ PHẦN THÂN);
 + Khi 1 class non-abstract kế 1 class abstract thì phải triển khai tất cả các phương thức trừu tượng.
 + Phù hợp với viêc thiết kế các thư viện, các module có sẵn để có thể dễ dàng sử dụng.
++ Abstract không đi được với final.
  */
 
 class Dog extends Animal {
@@ -35,7 +38,7 @@ class Dog extends Animal {
 
     @Override
     public void go() {
-        System.out.println("Dog is going!");
+        System.out.println("ly_thuyet.Dog is going!");
     }
 }
 
@@ -51,7 +54,7 @@ class Cat extends Animal {
 
     @Override
     public void go() {
-        System.out.println("Cat is going!");
+        System.out.println("ly_thuyet.Cat is going!");
     }
 
 
@@ -59,7 +62,7 @@ class Cat extends Animal {
 
 class Main {
     public static void main(String[] args) {
-        // Animal a = new Animal("Tom"); // Lỗi
+        // ly_thuyet.Animal a = new ly_thuyet.Animal("Tom"); // Lỗi
 
         Dog dog = new Dog("Mực");
         dog.go();
