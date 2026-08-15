@@ -1,3 +1,5 @@
+package thuat_toan_tim_kiem;
+
 public class LinearSearchDemo {
     public static void main(String[] args) {
         int[] arr = {12, 4, 17, 8, 25, 3, 19};
